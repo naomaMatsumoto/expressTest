@@ -7,7 +7,7 @@ const router = express.Router();
 router.get('/', (req: Request, res: Response, next: NextFunction) => {
   console.log('aaaa');
   console.log('aaaa');
-  res.send('respond with a resource');
+  res.send('respond with a resource1');
 });
 
 export {router}
