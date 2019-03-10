@@ -1,8 +1,7 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+<template lang="pug">
+  div(class="home")
+    img(alt="Vue logo" src="../assets/logo.png")
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
 </template>
 
 <script lang="ts">
@@ -16,18 +15,18 @@ import axios from 'axios'; // @ is an alias to /src
   },
 })
 export default class Home extends Vue {
-  created(){
+  private created() {
     console.log('created');
     axios.get(`http://localhost:3000/api`)
       .then((response) => {
-        console.log('response')
-        console.log(response)
+        console.log('response');
+        console.log(response);
 
           // callback(response)
       })
       .catch((response) => {
-        console.log('response1')
-        console.log(response)
+        console.log('response1');
+        console.log(response);
       });
   }
 }
