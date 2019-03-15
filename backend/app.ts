@@ -1,13 +1,14 @@
 import {router} from "./routes/users";
 import {api} from "./routes/api";
+import express from "express";
+import path from "path";
 
-const express = require('express');
-const path = require('path');
+// import cookieParser from "cookie-parser";
+// import logger from "morgan";
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-// CORSを許可する
-console.log('dddd1')
 
+// CORSを許可する
 
 const app = express();
 

@@ -1,13 +1,11 @@
-import {NextFunction, Request, Response} from "express";
-
-const express = require('express');
+import express, {NextFunction, Request, Response} from "express";
 const api = express.Router();
 
 // CORS を許可する
 api.use((req:any, res:any, next:any) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');  // ← コレを追加
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
 });
 
