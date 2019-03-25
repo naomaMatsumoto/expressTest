@@ -18,7 +18,6 @@
     "no-console": [
       false
     ],
-    "experimentalDecorators": true,
-
+    "experimentalDecorators": true
   }
 }
